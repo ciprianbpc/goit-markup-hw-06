@@ -273,7 +273,7 @@
         </div>
     </div>
 
-    <footer class="footer">
+    <div class="footer">
         <div class="footer-text">
             <a href="WebStudio" class="text-logo">Web</a>
             <p>Increase the flow of customers and<br> sales for your business with digital<br>
@@ -311,10 +311,17 @@
                 </a>
             </div>
         </div>
-        <div class="e-mail-input">
-            <h3>Subscribe</h3>
-        </div>
-    </footer>
+        <form>
+            <h3 class="group-title">Subscribe</h3>
+            <input class="email" type="email" name="email" id="user_email" placeholder="E-mail" />
+            <button class="subscribe-btn" type="submit">
+                <p class="subscribe-txt">Subscribe</p>
+                <svg class="icon-frame">
+                    <use href="./icons/Frame3.svg#icon-Frame"></use>
+                </svg>
+            </button>
+        </form>
+    </div>
 
     <script src="./js/modal.js"></script>
 </body>

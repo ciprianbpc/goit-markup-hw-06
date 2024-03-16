@@ -37,47 +37,42 @@
                     <use href="./icons/Ellipse 1.svg#Ellipse"></use>
                 </svg>
             </a>
-
-
-
-
-
-
-            <h3>Leave your contacts and we will call you back</h3>
+            <h3 class="modal-title">Leave your contacts and we will call you back</h3>
             <div class="form-content">
                 <label class="form-label">
-                    Name
-                    <br>
-                    <input type="text" name="username" />
+                    <h4 class="f-n">Name</h4>
+
+
+                    <input class="name-input" type="text" name="username" />
                 </label>
                 <label class="form-label">
-                    Phone
-                    <br>
-                    <input type="phone" name="Phone" />
+                    <h4 class="f-n"> Phone</h4>
+
+                    <input class="phone-input" type="phone" name="Phone" />
                 </label>
                 <label class="form-label">
-                    Email
-                    <br>
-                    <input type="email" name="email" />
+                    <h4 class="f-n">Email</h4>
+
+                    <input class="email-input" type="email" name="email" />
                 </label>
                 <label class="textarea">
-                    Comment
-                    <br>
-                    <textarea name="Comment"></textarea>
-                </label>
-                <label class="checkbox">
-                    <input type="checkbox">
+                    <h4 class="f-n">Comment</h4>
+
+                    <textarea class="textarea-input" name="Comment" placeholder="Text input"></textarea>
                 </label>
             </div>
-
-
-
-
-
-
-
-
-
+            <div class="checkbox">
+                <div class="frame2">
+                    <svg class="checkbox-svg">
+                        <use href="./icons/checkbox.svg#icon-Vector"></use>
+                        <input class="input-checbox" type="checkbox" name="checkbox" checked>
+                    </svg>
+                </div>
+                <p class="text-checkbox"> I accept the terms and conditions of the <span class="input-span"> Privacy
+                        Policy </span>
+                </p>
+            </div>
+            <button class="btn-send">Send</button>
         </div>
     </div>
     <div class="hero">
@@ -363,6 +358,7 @@
             </button>
         </form>
     </div>
+
 
     <script src="./js/modal.js"></script>
 </body>

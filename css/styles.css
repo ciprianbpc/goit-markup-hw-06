@@ -237,6 +237,15 @@
     background-color: var(--navy-blue-modal);
     transition: transform 0.3s;
 }
+
+
+
+
+
+
+
+
+
 .modal {
     z-index: 2;
     margin: 0 auto;
@@ -277,17 +286,6 @@
     height: 138px;
 }
 
-.contact-details-head {
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: var(--navy-blue);
-}
-
-
 .close-btn {
     width: 24px;
     height: 24px;
@@ -312,6 +310,13 @@
     
     transition: transform 250ms cubic-bezier(.04, 0, .02, 1);
 }
+
+
+
+
+
+
+
 .section1 {
     width: 1128px;
     display: flex;

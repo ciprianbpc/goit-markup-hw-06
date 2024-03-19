@@ -291,11 +291,11 @@
     position: relative;  
 }
 .svg-icon {
-  
     width: 18px;
     height: 24px;
     color: var(--navy-blue);
     position: absolute;
+   
     left: 20px;
     top: 50%; 
 }
@@ -305,27 +305,22 @@
     height: 0px;
     transform: rotate(-90deg);
     position: absolute;
+    top: 70%;
+    left: 40px;
 }
-.svg:hover{
-    transition: transfom -250ms cubic-bezier(0.4, 0, 0.2, 1);
-    color: var(--iris);
-}
-.name-input {
+.input {
     border: 1px solid var(--navy-blue-modal);
     border-radius: 4px;
     width: 360px;
     height: 40px;  
 }
-.name-input:hover{
-
-    transition: -250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border: 2px solid var(--iris);
+.input:hover {
+   border: 1px solid var(--iris);
 }
-.name-input:focus{
-    transition: -250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border: 2px solid var(--iris);
+.input:hover + .svg-icon {
+    fill: var(--iris);
+    transition: transform 250ms cubic-bezier(.04, 0, .02, 1);
 }
-
 .frame2 {
    display: inline-flex;   
 }
@@ -349,10 +344,8 @@
     width: 360px;
     height: 120px;  
 }
-.textarea:hover{
-
-    transition: -250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border: 2px solid var(--iris);
+.textarea:focus {   
+    border: 1px solid var(--iris);
 }
 .text-checkbox {
     font-family: var(--font-family);
@@ -375,7 +368,6 @@
     height: 138px;
     margin-bottom: 40px;
 }
-
 .comment {
     font-family: var(--font-family);
     font-weight: 400;
@@ -384,7 +376,6 @@
     letter-spacing: 0.04em;
     color: var(--light-slate);
 }
-
 .name {
     font-family: var(--font-family);
     font-weight: 400;
@@ -409,7 +400,6 @@
     letter-spacing: 0.04em;
     color: var(--light-slate);
 }
-
 .btn-send {
     border-radius: 4px;
     padding: 16px 32px;
@@ -418,9 +408,7 @@
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: var(--iris);
     color:#fff;
-
 }
-
 .close-btn {
     width: 24px;
     height: 24px;
@@ -431,27 +419,17 @@
     position: absolute;
     top: 24px;
     right: 24px; 
-    justify-content: center;
-   
+    justify-content: center; 
 }
-.close-btn svg { 
-    
+.close-btn svg {    
     height: 24px; 
     width: 24px;
     fill: black;
 }
 .close-btn:hover {
-    cursor: pointer;
-    
+    cursor: pointer;   
     transition: transform 250ms cubic-bezier(.04, 0, .02, 1);
 }
-
-
-
-
-
-
-
 .section1 {
     width: 1128px;
     display: flex;
@@ -636,7 +614,7 @@
 }
 .input:focus {
     cursor: pointer;
-    outline:2px solid red ;
+    outline:1px solid var(--iris);
 }
 .group-title {
     font-family: var(--font-family);

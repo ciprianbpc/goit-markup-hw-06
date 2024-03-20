@@ -409,22 +409,17 @@
     background: var(--iris);
     color:#fff;
 }
-.close-btn {
-    width: 24px;
-    height: 24px;
-    border-radius: 100%;
-    fill: var(--cornflower);
-    stroke-width: 1px;
-    stroke: rgba(0, 0, 0, 0.3);
-    position: absolute;
-    top: 24px;
-    right: 24px; 
-    justify-content: center; 
-}
-.close-btn svg {    
-    height: 24px; 
-    width: 24px;
+
+.a.close-btn { 
+   color:rgba(0, 0, 0, 1) ;
+    border-radius: 1px;  
     fill: black;
+    top: 24px;
+    right: 24px;
+}
+
+.svg {
+  fill: var(--navy-blue);
 }
 .close-btn:hover {
     cursor: pointer;   

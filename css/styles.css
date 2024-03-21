@@ -295,24 +295,15 @@
     height: 24px;
     color: var(--navy-blue);
     position: absolute;
-   
     left: 20px;
     top: 50%; 
-}
-.vertical-line {
-    border: 1.25px solid var(--navy-blue);
-    width: 18px;
-    height: 0px;
-    transform: rotate(-90deg);
-    position: absolute;
-    top: 70%;
-    left: 40px;
 }
 .input {
     border: 1px solid var(--navy-blue-modal);
     border-radius: 4px;
-    width: 360px;
-    height: 40px;  
+    width: 320px;
+    height: 40px; 
+    padding-left: 40px; 
 }
 .input:hover {
    border: 1px solid var(--iris);
@@ -409,17 +400,24 @@
     background: var(--iris);
     color:#fff;
 }
-
-.a.close-btn { 
-   color:rgba(0, 0, 0, 1) ;
-    border-radius: 1px;  
-    fill: black;
+.close-btn {   
+    position: absolute;   
     top: 24px;
     right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    fill: var(--cornflower);
+    stroke-width: 2px;
+    stroke: rgba(0, 0, 0, 0.1);
 }
-
-.svg {
-  fill: var(--navy-blue);
+.close-svg {
+    fill: var(--navy-blue);
+    width: 100%;
+    height: 100%;    
 }
 .close-btn:hover {
     cursor: pointer;   
